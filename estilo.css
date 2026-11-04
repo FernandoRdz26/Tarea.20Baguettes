@@ -1,0 +1,10 @@
+h1{text-align: center;}
+body{background: radial-gradient(rgb(255, 255, 255),rgb(129, 129, 129)); background-attachment: fixed; background-repeat: no-repeat; margin: 0; overflow-x: hidden;}
+form{display:block; border-left: 5px solid orange; border-right: 5px solid orange; height: 100vh; border-top: 5px solid orange; background: rgba(253, 253, 253, 0.623);}
+input{margin-bottom:10px ;}
+label{margin-bottom:10px ;}
+select{margin-bottom: 10px;}
+*{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.container{display: flex; justify-content: center;}
+header{background: rgba(253, 253, 253, 0.623) ;}
+hr{height: 4px;}
