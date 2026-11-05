@@ -21,7 +21,7 @@
 
         <label for="especialidad">Especialidad:</label>
         <select name="especialidad" id="especialidad">
-            <option value="Clasica">Clasica (79.99 MXN)</option>
+            <option value="clasica">Clasica (79.99 MXN)</option>
             <option value="bbq">BBQ (99.99 MXM)</option>
             <option value="tocino">Tocino (119.99)</option>
             <option value="doble">Doble Tamaño (149.99 MXN)</option>
@@ -29,7 +29,7 @@
         </select> 
 
         <br>
-        <label for="Tipo-pan">Tipo de pan: </label>
+        <label for="tipopan">Tipo de pan: </label>
         <input type="radio" name="pan" id="pan" value="Clásico">Clásico
         <input type="radio" name="pan" id="pan" value="ajonjolí">Con ajonjolí(+19.99 MXN)
         <input type="radio" name="pan" id="pan" value="Integral">Integral (+20.99 MXN)
@@ -38,13 +38,23 @@
     <br>
     <label for>Ingredientes adicionales (5.00 MXN c/u)</label>
     <input type="checkbox" name="queso" id="queso" value="queso">Queso
-    <input type="checkbox" name="queso" id="queso" value="queso">Queso
-    <input type="checkbox" name="queso" id="queso" value="queso">Queso
-    <input type="checkbox" name="queso" id="queso" value="queso">Queso
-    <input type="checkbox" name="queso" id="queso" value="queso">Queso
-    <input type="checkbox" name="queso" id="queso" value="queso">Queso
-    <input type="checkbox" name="queso" id="queso" value="queso">Queso
-    <input type="checkbox" name="queso" id="queso" value="queso">Queso
+    <input type="checkbox" name="lechuga" id="lechuga" value="lechuga">Lechuga
+    <input type="checkbox" name="jitomate" id="jitomate" value="jitomate">Jitomate
+    <input type="checkbox" name="cebolla" id="cebolla" value="cebolla">Cebolla
+    <input type="checkbox" name="jalapeño" id="jalapeño" value="jalapeño">Jalapeño
+    <input type="checkbox" name="huevo" id="huevo" value="huevo">Huevo
+    <input type="checkbox" name="pepino" id="pepino" value="pepino">Pepino
+    <input type="checkbox" name="champiñones" id="champiñones" value="champiñones">Champiñones
+    <input type="checkbox" name="tocino" id="tocino" value="tocino">Tocino extra
+    <input type="checkbox" name="doblequeso" id="doblequeso" value="doblequeso">Doble queso
+    <input type="checkbox" name="piña" id="piña" value="piña">Piña
+    <input type="checkbox" name="guacamole" id="guacamole" value="guacamole">Guacamole
+    <input type="checkbox" name="bbq" id="bbq" value="bbq">Salsa BBQ
+    <input type="checkbox" name="chipotle" id="chipotle" value="chipotle">Aderezo Chipotle
+    <input type="checkbox" name="mayonesa" id="mayonesa" value="mayonesa">Mayonesa
+    <input type="checkbox" name="mostaza" id="mostaza" value="mostaza">Mostaza
+    <input type="checkbox" name="peperoni" id="peperoni" value="peperoni">Peperoni
+    <input type="checkbox" name="ketchup" id="ketchup" value="ketchup">Ketchup
 
     <br>
 
@@ -57,14 +67,20 @@
         <input type="checkbox" name="domicilio" id="domicilio">
         ¿Es a domicilio? (+29.99 MXN)
     </label>
+    <br>
     
-    <div class="Total" id="Total">
-        Total: $0.00 MXN
+        <label for="total">Total a pagar:</label>
+        <input type="text" name="total" id="total" readonly>
 
+    <br>
+    <button type="submit" onclick="calcular()">Calcular Total</button>
+    
     </form>
     </div>
 
     </div>
+
+<script src="script.js"></script>
 
 </body>
 
