@@ -6,7 +6,7 @@ function calcular(){
     especialidad = document.getElementById("especialidad");
     let pan = document.querySelector('input[name="pan"]:checked');
     console.log(pan.value);
-    console.log(especialidad.value);
+
     
     if (especialidad.value == "clasica"){
         total = 79.99*1;
@@ -25,12 +25,21 @@ function calcular(){
         total = 179.99*1;
     }
 
-    if(pan == "clasico"){
+    console.log(especialidad.value);    
+
+    if(pan.value == "clasico"){
         total = total*1
     }
-    else if(pan == "ajonjoli"){
+    else if(pan.value == "ajonjoli"){
         total = total*1 + 19.99*1;
     }
+    else if(pan.value == "integral"){
+        total = total*1 + 20.99*1;
+    }
+    else if(pan.value == "brioche"){
+        total = total*1 + 50.99*1;
+    }
+
 
     
     document.getElementById("total").value = total
