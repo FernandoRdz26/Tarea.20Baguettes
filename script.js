@@ -40,7 +40,8 @@ function calcular(){
         total = total*1 + 50.99*1;
     }
 
-
     
-    document.getElementById("total").value = total
+
+        // Math.round() sirve para redondear el numero en decimal
+    document.getElementById("total").value = Math.round(total)
 }
