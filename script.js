@@ -1,13 +1,18 @@
 let especialidad = 0;
 let total = 0;
-
 function calcular(){
     event.preventDefault();
     especialidad = document.getElementById("especialidad");
     let pan = document.querySelector('input[name="pan"]:checked');
     console.log(pan.value);
-
+    let ingredientesextras = document.querySelectorAll('input.ingrediente:checked');
+    let costoingredientes = ingredientesextras.length * 5;
+    const cantidad = document.getElementById("cantidad");
+    const cantidadbaguettes = parseInt(cantidad.value);
+    let domicilio = document.getElementById("domicilio");
     
+    console.log(cantidadbaguettes);
+
     if (especialidad.value == "clasica"){
         total = 79.99*1;
     }
@@ -28,20 +33,25 @@ function calcular(){
     console.log(especialidad.value);    
 
     if(pan.value == "clasico"){
-        total = total*1
+        total = (total*1) * cantidadbaguettes
     }
     else if(pan.value == "ajonjoli"){
-        total = total*1 + 19.99*1;
+        total = (total*1 + 19.99*1) * cantidadbaguettes;
     }
     else if(pan.value == "integral"){
-        total = total*1 + 20.99*1;
+        total = (total*1 + 20.99*1) * cantidadbaguettes;
     }
     else if(pan.value == "brioche"){
-        total = total*1 + 50.99*1;
+        (total = total*1 + 50.99*1) * cantidadbaguettes;
     }
 
-    
+    if(domicilio.checked){
+        total += 29.99
+    }   
 
+    total += costoingredientes;
+    
+    console.log("costoingredientes");
         // Math.round() sirve para redondear el numero en decimal
     document.getElementById("total").value = Math.round(total)
 }

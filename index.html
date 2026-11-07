@@ -30,31 +30,31 @@
 
         <br>
         <label for="pan">Tipo de pan: </label>
-        <input type="radio" name="pan" id="pan" value="clasico">Clásico
+        <input type="radio" name="pan" id="pan" value="clasico" checked>Clásico
         <input type="radio" name="pan" id="pan" value="ajonjoli">Con ajonjolí(+19.99 MXN)
         <input type="radio" name="pan" id="pan" value="integral">Integral (+20.99 MXN)
         <input type="radio" name="pan" id="pan" value="brioche">Brioche (+50.99 MXN)
 
     <br>
     <label for>Ingredientes adicionales (5.00 MXN c/u)</label>
-    <input type="checkbox" name="queso" id="queso" value="queso">Queso
-    <input type="checkbox" name="lechuga" id="lechuga" value="lechuga">Lechuga
-    <input type="checkbox" name="jitomate" id="jitomate" value="jitomate">Jitomate
-    <input type="checkbox" name="cebolla" id="cebolla" value="cebolla">Cebolla
-    <input type="checkbox" name="jalapeño" id="jalapeño" value="jalapeño">Jalapeño
-    <input type="checkbox" name="huevo" id="huevo" value="huevo">Huevo
-    <input type="checkbox" name="pepino" id="pepino" value="pepino">Pepino
-    <input type="checkbox" name="champiñones" id="champiñones" value="champiñones">Champiñones
-    <input type="checkbox" name="tocino" id="tocino" value="tocino">Tocino extra
-    <input type="checkbox" name="doblequeso" id="doblequeso" value="doblequeso">Doble queso
-    <input type="checkbox" name="piña" id="piña" value="piña">Piña
-    <input type="checkbox" name="guacamole" id="guacamole" value="guacamole">Guacamole
-    <input type="checkbox" name="bbq" id="bbq" value="bbq">Salsa BBQ
-    <input type="checkbox" name="chipotle" id="chipotle" value="chipotle">Aderezo Chipotle
-    <input type="checkbox" name="mayonesa" id="mayonesa" value="mayonesa">Mayonesa
-    <input type="checkbox" name="mostaza" id="mostaza" value="mostaza">Mostaza
-    <input type="checkbox" name="peperoni" id="peperoni" value="peperoni">Peperoni
-    <input type="checkbox" name="ketchup" id="ketchup" value="ketchup">Ketchup
+    <input type="checkbox" class="ingrediente" name="queso" id="queso" value="queso">Queso
+    <input type="checkbox" class="ingrediente" name="lechuga" id="lechuga" value="lechuga">Lechuga
+    <input type="checkbox" class="ingrediente" name="jitomate" id="jitomate" value="jitomate">Jitomate
+    <input type="checkbox" class="ingrediente" name="cebolla" id="cebolla" value="cebolla">Cebolla
+    <input type="checkbox" class="ingrediente" name="jalapeño" id="jalapeño" value="jalapeño">Jalapeño
+    <input type="checkbox" class="ingrediente" name="huevo" id="huevo" value="huevo">Huevo
+    <input type="checkbox" class="ingrediente" name="pepino" id="pepino" value="pepino">Pepino
+    <input type="checkbox" class="ingrediente" name="champiñones" id="champiñones" value="champiñones">Champiñones
+    <input type="checkbox" class="ingrediente" name="tocino" id="tocino" value="tocino">Tocino extra
+    <input type="checkbox" class="ingrediente" name="doblequeso" id="doblequeso" value="doblequeso">Doble queso
+    <input type="checkbox" class="ingrediente" name="piña" id="piña" value="piña">Piña
+    <input type="checkbox" class="ingrediente" name="guacamole" id="guacamole" value="guacamole">Guacamole
+    <input type="checkbox" class="ingrediente" name="bbq" id="bbq" value="bbq">Salsa BBQ
+    <input type="checkbox" class="ingrediente" name="chipotle" id="chipotle" value="chipotle">Aderezo Chipotle
+    <input type="checkbox" class="ingrediente" name="mayonesa" id="mayonesa" value="mayonesa">Mayonesa
+    <input type="checkbox" class="ingrediente" name="mostaza" id="mostaza" value="mostaza">Mostaza
+    <input type="checkbox" class="ingrediente" name="peperoni" id="peperoni" value="peperoni">Peperoni
+    <input type="checkbox" class="ingrediente" name="ketchup" id="ketchup" value="ketchup">Ketchup
 
     <br>
 
@@ -73,7 +73,13 @@
         <input type="text" name="total" id="total" readonly>
 
     <br>
-    <button type="submit" onclick="calcular()">Calcular Total</button>
+    <button type="submit" onclick="calcular()" class="boton">Calcular Total</button>
+
+    <div class="imagenes">
+        <img src="baguette1.webp" alt="">
+        <img src="baguette2.jpg" alt="">
+        <img src="baguette3.jpg" alt="">
+    </div>
     
     </form>
     </div>

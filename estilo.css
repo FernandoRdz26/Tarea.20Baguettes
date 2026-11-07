@@ -3,7 +3,10 @@ body{background: radial-gradient(rgb(255, 255, 255),rgb(129, 129, 129)); backgro
 form{display:block; border-left: 5px solid orange; border-right: 5px solid orange; 
     border-bottom: 5px solid orange;height: 100vh; 
     border-top: 5px solid orange; background: rgba(253, 253, 253, 0.623); border-radius: 20px; 
-    box-sizing: border-box; padding: 10px; width: 600px; height: 600px; margin-bottom: 100px;}
+    box-sizing: border-box; padding: 10px; width: 600px; height: 600px; margin-bottom: 100px; position: relative;}
+.imagenes{display: flex; height: 150px; position: absolute; bottom: 0px; width: 98%; box-sizing: 
+    border-box; margin-bottom: 50px;}
+.imagenes img{width: 32%; border-radius: 5px;}   
 input{margin-bottom:10px ;}
 label{margin-bottom:10px ;}
 select{margin-bottom: 10px;}
@@ -12,3 +15,5 @@ select{margin-bottom: 10px;}
 header{background: rgba(253, 253, 253, 0.623) ;}
 hr{height: 4px;}
 #total{border: none; border-bottom: 2px solid black;}
+.boton{margin-left: 39%; border: none; background-color: orange; height: 30px; border-radius: 20px; transition: 0.5s;}
+.boton:hover{background-color: rgb(250, 182, 55); transform: scale(1.06);}
